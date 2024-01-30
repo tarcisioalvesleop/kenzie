@@ -1,7 +1,8 @@
-body, h1, h2, h3, p, button {
+body, h1, h2, h3, p, button, ul, li {
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -61,12 +62,6 @@ svg{
     padding: 80px;
 }
 
-#rodape {
-    padding: 32px 0;
-    text-align: center;
-
-}
-
 .botao-chamada{
     font-family: "JetBrains Mono", sans-serif;
     background-color: #00ffa5;
@@ -74,4 +69,122 @@ svg{
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
+}
+
+.lista-cartoes{
+    list-style: none;
+    padding-bottom: 32px;
+
+    display: flex;
+    gap: 10px; /* espaçamento entre as caixas */
+}
+
+.cartao{
+    border: 1px solid gray;
+    padding: 15px;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#rodape {
+    padding: 32px 80px;
+    border-top: 1px solid gray;
+
+    display: flex;
+}
+
+.rodape-link{
+    color: white;
+    text-decoration: none;
+}
+
+.rodape-link:hover  {
+    /* color: red; */
+    text-decoration: underline;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+/* MODAL */
+.modal[open] {
+    background-color: #191c1f;
+    color: white;
+    border: 2px solid blue;
+
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modal::backdrop {
+    background-color: rgba(0,0,0, 0.7);
+}
+
+.cabecalho-modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-fechar-modal {
+    background-color: #343a40;
+    padding: 8px 12px;
+    color: #adb5bd;
+    cursor: pointer;
+}
+
+.input-modal {
+    padding: 14px 20px;
+    border: 1px solid gray;
+    background-color: #191c1f;
+    font-family: "JetBrains Mono", sans-serif;
+    color: white;
+}
+
+.botao-inscricao{
+    font-family: "JetBrains Mono", sans-serif;
+    background-color: #00ffa5;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* tela menores */
+@media (max-width: 1068px){
+    .lista-cartoes{
+        flex-direction: column;
+    }
+}
+/* tela menores */
+@media (max-width: 580px){
+    .titulo-principal{
+        font-size: 45px;
+        /* flex-direction: column; */
+    }
+
+    #rodape{
+        flex-direction: column;
+        gap: 16px;
+    }
+    /* .contatos{
+        gap: 16px;
+    } */
 }

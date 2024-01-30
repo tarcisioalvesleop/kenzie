@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,27 @@
         />
 </head>
 <body>
+
+    <dialog class="modal" >
+        <header class="cabecalho-modal">
+            <h3 class="titulo-terciario">Inscrição</h3>
+            <button class="botao-fechar-modal">X</button>
+        </header>  
+        
+        <p class="paragrafo-menor">
+            Fique atento à sua caixa de entrada e não perca essa oportunidade de aprender e se desenvolver. Até breve!
+        </p>
+        <input type="text" placeholder="Digite seu nome" class="input-modal" />
+        <input type="email" placeholder="Digite sua senha" class="input-modal" />
+
+        <button class="botao-inscricao">Quero participar!</button>
+    </dialog>
+
     <main>
         <!-- secao 1 - Destaque -->
         <section class="secao-destaque">
             <span class="texto-superior-principal"> CONCORRA A BOLSAS DE ESTUDO </span>
-            <h1 class="titulo-principal"> SAIA DO ZERO NA PROGRAMAÇÃO</h1>
+            <h1 class="titulo-principal"> SAIA DO ZERO NA PROGRAMAÇÃO!</h1>
             <P class="paragrafo-padrao"> Aprenda a construir do zero um site e descubra porque milhares de brasileiros estão deixando seus 
                 empregos e se tornando programadores com média salarial de mais de R$9mil por mês.
             </P>
@@ -46,8 +62,8 @@
                 </strong>
             </p>
 
-            <ul>
-                <li>
+            <ul class="lista-cartoes">
+                <li class="cartao">
                     <svg
                         aria-hidden="true"
                         class="e-font-icon-svg e-fab-html5"
@@ -66,7 +82,7 @@
                     </p>
                 </li>
 
-                <li>
+                <li class="cartao">
                     <svg
                         aria-hidden="true"
                         class="e-font-icon-svg e-fab-css3-alt"
@@ -82,7 +98,7 @@
                     <h3 class="titulo-terciario">CSS</h3>
                     <p class="paragrafo-menor"> CSS deixa ele mais bonito.</p>
                 </li>
-                <li>
+                <li class="cartao">
                     <svg
                         aria-hidden="true"
                         class="e-font-icon-svg e-fab-js"
@@ -96,7 +112,7 @@
                         ></path>
                     </svg>
                     <h3 class="titulo-terciario">Javascript</h3>
-                    <p class="paragrafo-menor">Javascript trás interatividade</p>
+                    <p class="paragrafo-menor">Javascript trás interatividade.</p>
                 </li>
             </ul>
 
@@ -114,28 +130,28 @@
                 5 dias de aulas ao vivo!
             </h2>
 
-            <ul>
-                <li>
+            <ul class="lista-cartoes">
+                <li class="cartao">
                     <h3 class="titulo-terciario"> Dia #1</h3>
                     <h3 class="titulo-terciario"> 22/01</h3>
                     <p class="paragrafo-menor">Conceitos básicos de HTML.</p>
                 </li>
-                <li>
+                <li class="cartao">
                     <h3 class="titulo-terciario"> Dia #2</h3>
                     <h3 class="titulo-terciario"> 23/01</h3>
                     <p class="paragrafo-menor">Estilizando com CSS.</p>
                 </li>
-                <li>
+                <li class="cartao">
                     <h3 class="titulo-terciario"> Dia #3</h3>
                     <h3 class="titulo-terciario"> 24/01</h3>
                     <p class="paragrafo-menor">Layouts Frexíveis com CSS.</p>
                 </li>
-                <li>
+                <li class="cartao">
                     <h3 class="titulo-terciario"> Dia #4</h3>
                     <h3 class="titulo-terciario"> 25/01</h3>
                     <p class="paragrafo-menor">Responsividade com CSS.</p>
                 </li>
-                <li>
+                <li class="cartao">
                     <h3 class="titulo-terciario"> Dia #5</h3>
                     <h3 class="titulo-terciario"> 26/01</h3>
                     <p class="paragrafo-menor">Publicação do site.</p>
@@ -146,7 +162,23 @@
     </main>
 
     <footer id="rodape">
-        <p class="paragrafo-menor">2023 Kenzie Academy. All rights reserved.</p>
+        <div class="redes-sociais">
+            <h2 class="rodape-titulo"> Kenzie Redes</h2>
+            <a class="rodape-link" href="https://facebook.com/Kenzieacademybr/" target="_blank">Facebook</a>
+            <a class="rodape-link" href="https://instagram.com/kenzieacademybr/" target="_blank"> Instagram</a>
+            <a class="rodape-link" href="https://www.youtube.com/c/KenzieAcademyBrasil" target="_blank">Youtube</a>
+            <a class="rodape-link" href="https://br.linkedin.com/school/KenzieAcademybr" target="_blank">Linkedin</a>
+        </div>
+
+        <div class="contatos">
+            <h2 class="rodape-titulo"> CONTATOS</h2>
+            <p>R. General Mario Tourinho, 1733 - 706 - Seminário, Curitiba/PR</p>
+            <p>Av. Efigênio Salles, 1299 - Aleixo, Manaus/AM</p>
+            <p>CNPJ: 35.224.825/0001-74</p>
+            <p>contato@kenzie.com.br</p>
+        </div>
+            
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
